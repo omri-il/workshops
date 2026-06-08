@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REPLACE: page title -->
+  <title>תודה שהשתתפתם — שם הסדנה · עומרי אירם</title>
+
+  <!-- Clarity Analytics (shared) -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w1ajcl9gof");
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="pre-headline">תודה שהשתתפתם 🙏</span>
+      <!-- REPLACE: closing headline -->
+      <h1>זה לא נגמר כאן — הנה כל מה שהבטחתי</h1>
+      <p class="sub">השובר, הסרטון, וכל הדרכים להישאר בקשר — מחכים לכם למטה.</p>
+    </div>
+  </section>
+
+  <!-- ══ VOUCHER ══ -->
+  <section class="section">
+    <div class="wrap">
+      <p class="section-label">מתנה למשתתפי הסדנה</p>
+      <div class="voucher">
+        <div class="v-label">🎁 שובר הנחה</div>
+        <!-- REPLACE: offer text -->
+        <div class="v-headline">50% הנחה על הקהילה</div>
+        <div class="v-desc">בתוקף לשבוע מתום הסדנה. השתמשו בקוד בקופה:</div>
+        <span class="v-code">REPLACE_CODE</span>   <!-- REPLACE: discount code -->
+        <p class="v-copy-hint">לחצו על הקוד כדי להעתיק</p>
+      </div>
+      <!-- REPLACE: redemption link -->
+      <a href="REPLACE_REDEEM_LINK" class="btn" target="_blank" rel="noopener"
+         onclick="trackEvent('voucher_redeem_click')">
+        ממשו את ההנחה ←
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ VIDEO (recording / bonus) ══ -->
+  <section class="section peach">
+    <div class="wrap">
+      <p class="section-label">הקלטת הסדנה</p>
+      <h2>צפו שוב, בקצב שלכם</h2>
+      <div class="video-frame">
+        <!-- REPLACE: YouTube embed URL (use the /embed/ form) -->
+        <iframe src="https://www.youtube.com/embed/REPLACE_VIDEO_ID"
+                title="הקלטת הסדנה" allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BIO + CONNECT ══ -->
+  <section class="section">
+    <div class="wrap">
+      <p class="section-label">מי אני</p>
+      <div class="bio-row">
+        <div class="bio-photo">
+          <!-- REPLACE: photo URL (falls back to emoji if missing) -->
+          <img src="REPLACE_PHOTO_URL" alt="עומרי אירם"
+               onerror="this.parentElement.innerHTML='&#128104;&#8205;&#127979;'">
+        </div>
+        <div class="bio-text">
+          <h3>עומרי אירם</h3>
+          <p>מורה לביולוגיה, מנהל קהילת GEG ישראל, ובונה כלי AI למורים.</p>
+          <div class="bio-creds">
+            <span class="bio-cred">✦ 4,200+ מורים בערוץ היוטיוב</span>
+            <span class="bio-cred">✦ מרצה בכנסי משרד החינוך</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="section-label">בואו נישאר בקשר</p>
+      <ul class="links">
+        <!-- REPLACE links (delete rows you don't need) -->
+        <li><a href="REPLACE_SKOOL"   target="_blank" rel="noopener"><span class="ico">🚀</span> הצטרפו לקהילה בסקול <span class="arr">←</span></a></li>
+        <li><a href="REPLACE_YOUTUBE" target="_blank" rel="noopener"><span class="ico">▶️</span> ערוץ היוטיוב "להיות מורה" <span class="arr">←</span></a></li>
+        <li><a href="REPLACE_WHATSAPP" class="" target="_blank" rel="noopener"><span class="ico">💬</span> קבוצת הוואטסאפ <span class="arr">←</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══ EMAIL CAPTURE ══ -->
+  <section class="section peach">
+    <div class="wrap">
+      <div class="form-card">
+        <div id="signup-form">
+          <h3>רוצים את כל זה במייל?</h3>
+          <p class="form-sub">אשלח לכם את השובר, הקלטה ועדכונים על הסדנאות הבאות.</p>
+
+          <div class="field">
+            <label for="f-name">שם פרטי</label>
+            <input id="f-name" type="text" placeholder="איך קוראים לך?" autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="f-email">אימייל</label>
+            <input id="f-email" type="email" placeholder="example@email.com" dir="ltr" autocomplete="email">
+          </div>
+
+          <!-- REPLACE: must match the workshop (used to tag the lead + pick the right voucher email) -->
+          <input type="hidden" id="workshop_name" value="REPLACE_WORKSHOP_NAME DD-MM-2026">
+
+          <button class="btn" id="signup-btn" onclick="submitWorkshopForm()">שלחו לי הכל ←</button>
+          <p class="btn-note">🔒 ללא ספאם. ניתן להסרה בכל עת.</p>
+        </div>
+
+        <div id="form-ok" class="form-ok" style="display:none">
+          <div class="ok-emoji">🎉</div>
+          <h3>נשלח!</h3>
+          <p>בדקו את תיבת המייל — הכול בדרך אליכם.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">עומרי אירם · <a href="https://omri-iram.co.il">omri-iram.co.il</a></div>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>
