@@ -37,7 +37,7 @@ Adding a workshop = copy `_template/` to a new slug folder (lowercase, dashes, l
 Checked in this repo, not with Omri. Ask him before you change any of it.
 
 - No workshop folder exists. Only `_template/` is here.
-- `index.html` links to `./classroom-2026-06/during.html`, which is missing. That link returns 404 on the live site.
+- `index.html` holds a commented-out example row that points at `./classroom-2026-06/during.html`. It sits inside `<!-- Example: ... -->`, so no visitor can reach it, and the folder is not there. Keep it: it is the pattern for a new row. The only live link in that list goes to the main site.
 - `assets/script.js` holds `GOOGLE_SCRIPT_URL = "REPLACE_WITH_APPS_SCRIPT_URL"`, so the email form on an "after" page saves nothing. `SETUP.md` step 2 is open.
 
 ## Rules
