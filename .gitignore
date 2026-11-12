@@ -10,3 +10,5 @@ Thumbs.db
 
 # Backend scratch (kept out of the static site)
 backend/.env
+
+.claude/worktrees/
