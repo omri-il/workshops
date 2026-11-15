@@ -16,7 +16,7 @@ workshops/
 ├── CNAME                # workshops.omri-iram.co.il  (custom-domain mapping for Pages)
 ├── index.html           # branded landing that lists the workshops
 ├── assets/
-│   ├── style.css        # shared brand styling (Hebrew RTL, Heebo, peach/orange)
+│   ├── style.css        # shared brand styling (Hebrew RTL, Rubik + Assistant, navy/ochre: the business design language)
 │   └── script.js        # shared: countdown + form POST + voucher copy + Clarity
 ├── _template/           # copy this to start a new workshop — DON'T edit in place
 │   ├── during.html
